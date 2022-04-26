@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://cheapsslsecurity.com/p/http2-vs-http1/ -->
+<html lang="en-US" class=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/archivonarrow-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/robotoslab-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/robotoslab-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/archivonarrow-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/chaparralpro-regular.woff" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/chaparralpro-bold.woff" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://cheapsslsecurity.com/wp-content/themes/cheapssl-psite/fonts/roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link data-minify="1" rel="stylesheet" type="text/css" media="all" href="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/style.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<link data-minify="1" rel="stylesheet" type="text/css" media="all" href="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/responsive.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<link rel="pingback" href="https://cheapsslsecurity.com/p/xmlrpc.php">
+<script type="text/javascript" async="" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/analytics.js.download"></script><script async="" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/analytics.js.download"></script><script async="" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/gtm.js.download"></script><script type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/jquery-1.11.2.min.js.download" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/addtocart.js.download" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/menu.js.download" defer=""></script>
+<script data-minify="1" type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/mobilemenu.js.download" defer=""></script>
+<link rel="shortcut icon" href="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/favicon.ico">
+<!--[if lt IE 9]>
+<script src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<title>HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained</title>
+<meta name="description" content="HTTP2 Vs HTTP1: Let&#39;s understand about two protocols and their key difference. We explore the research on HTTP2 and HTTP1.">
+<link rel="canonical" href="https://cheapsslsecurity.com/p/http2-vs-http1/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained">
+<meta property="og:description" content="HTTP2 Vs HTTP1: Let&#39;s understand about two protocols and their key difference. We explore the research on HTTP2 and HTTP1.">
+<meta property="og:url" content="https://cheapsslsecurity.com/p/http2-vs-http1/">
+<meta property="og:site_name" content="Cheap SSL Security">
+<meta property="article:publisher" content="https://www.facebook.com/CheapSSLSecurities">
+<meta property="article:published_time" content="2019-07-24T06:01:17+00:00">
+<meta property="article:modified_time" content="2021-09-13T08:26:18+00:00">
+<meta property="og:image" content="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@sslsecurity">
+<meta name="twitter:site" content="@sslsecurity">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="casey.crane">
+<meta name="twitter:label2" content="Est. reading time">
+<meta name="twitter:data2" content="13 minutes">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://cheapsslsecurity.com/p/#website","url":"https://cheapsslsecurity.com/p/","name":"Cheap SSL Security","description":"Shop for SSL Certificates at Cheap Prices","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cheapsslsecurity.com/p/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://cheapsslsecurity.com/p/http2-vs-http1/#primaryimage","inLanguage":"en-US","url":"https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png","contentUrl":"https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png","width":500,"height":300,"caption":"HTTP Protocol Process"},{"@type":"WebPage","@id":"https://cheapsslsecurity.com/p/http2-vs-http1/#webpage","url":"https://cheapsslsecurity.com/p/http2-vs-http1/","name":"HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained","isPartOf":{"@id":"https://cheapsslsecurity.com/p/#website"},"primaryImageOfPage":{"@id":"https://cheapsslsecurity.com/p/http2-vs-http1/#primaryimage"},"datePublished":"2019-07-24T06:01:17+00:00","dateModified":"2021-09-13T08:26:18+00:00","author":{"@id":"https://cheapsslsecurity.com/p/#/schema/person/67efdf022bc2e0a20668250a421760f3"},"description":"HTTP2 Vs HTTP1: Let's understand about two protocols and their key difference. We explore the research on HTTP2 and HTTP1.","breadcrumb":{"@id":"https://cheapsslsecurity.com/p/http2-vs-http1/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://cheapsslsecurity.com/p/http2-vs-http1/"]}]},{"@type":"BreadcrumbList","@id":"https://cheapsslsecurity.com/p/http2-vs-http1/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"SSL Help","item":"https://cheapsslsecurity.com/p/"},{"@type":"ListItem","position":2,"name":"SSL Basics","item":"https://cheapsslsecurity.com/p/ssl-basics/"},{"@type":"ListItem","position":3,"name":"HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained"}]},{"@type":"Person","@id":"https://cheapsslsecurity.com/p/#/schema/person/67efdf022bc2e0a20668250a421760f3","name":"casey.crane","image":{"@type":"ImageObject","@id":"https://cheapsslsecurity.com/p/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/6b25b47fe9c29672d030d6b2514d3199?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/6b25b47fe9c29672d030d6b2514d3199?s=96&d=mm&r=g","caption":"casey.crane"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Cheap SSL Security » Feed" href="https://cheapsslsecurity.com/p/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cheap SSL Security » Comments Feed" href="https://cheapsslsecurity.com/p/comments/feed/">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" href="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/style.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link data-minify="1" rel="stylesheet" href="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/postratings-css.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" type="text/css" media="all">
+<script type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/jquery.min.js.download" id="jquery-core-js" defer=""></script>
+<script type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/jquery-migrate.min.js.download" id="jquery-migrate-js" defer=""></script>
+<link rel="https://api.w.org/" href="https://cheapsslsecurity.com/p/wp-json/"><link rel="alternate" type="application/json" href="https://cheapsslsecurity.com/p/wp-json/wp/v2/posts/397"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cheapsslsecurity.com/p/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cheapsslsecurity.com/p/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.9.3">
+<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><script>
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script> 
+<script async="" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/js"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push( arguments );
+        }
+        gtag( 'js', new Date() );
+
+        gtag( 'config', 'UA-43121050-2' );
+    </script>
+
+<script>
+        ( function ( w, d, s, l, i ) {
+            w[ l ] = w[ l ] || [];
+            w[ l ].push( {
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            } );
+            var f = d.getElementsByTagName( s )[ 0 ],
+                j = d.createElement( s ),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore( j, f );
+        } )( window, document, 'script', 'dataLayer', 'GTM-WGRLLPS' );
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43121050-2', 'auto');
+  ga('send', 'pageview');
+  setTimeout("ga('send','event','Profitable Engagement','time on page more than 15_seconds ')",15000);
+
+</script>
+<script data-minify="1" type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/2.js.download" async=""></script>
+
+</head>
+<body class="post-template-default single single-post postid-397 single-format-standard single-author singular two-column right-sidebar">
+
+<noscript><iframe 
+height="0" width="0" style="display:none;visibility:hidden" data-src="https://www.googletagmanager.com/ns.html?id=GTM-WGRLLPS" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe></noscript>
+
+<div id="page" class="hfeed">
+<header id="branding" role="banner" class="header">
+
+<div class="wrapper">
+<div class="logo"> <a href="https://cheapsslsecurity.com/p/"> <img alt="CheapSSLSecurity" width="190" height="48" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/logo.svg" class=" lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/logo.svg"><noscript><img alt="CheapSSLSecurity" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/logo.svg" width="190" height="48" /></noscript></a> </div>
+<nav class="navimain">
+<ul>
+<li class="brand-link"> <a href="https://cheapsslsecurity.com/sslbrands.html"> <i class="icon-nav-arrowone"><img alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class=" lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/mainmnu-arrowdown.svg"><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" alt="Arrow Down"></noscript></i> <span class="nav-link txtspacing">SSL Brands</span> <span class="nav-link-help">Only the most trusted</span> </a>
+<div id="brand-nav" class="nav-level-2">
+<ul class="submenu">
+<li><a href="https://cheapsslsecurity.com/sslbrands/digicert.html"><img alt="DigiCert" width="86" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-digicert.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-digicert.svg" alt="DigiCert" width="86" height="22"></noscript></a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/thawte.html"><img alt="Thawte" width="86" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-thawte.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-thawte.svg" alt="Thawte" width="86" height="22"></noscript></a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/geotrust.html"><img alt="GeoTrust" width="86" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-geotrust.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-geotrust.svg" alt="GeoTrust" width="86" height="22"></noscript></a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/rapidssl.html"><img alt="RapidSSL" width="86" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-rapidssl.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-rapidssl.svg" alt="RapidSSL" width="86" height="22"></noscript></a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/comodo.html"><img alt="Comodo" width="86" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-comodo.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-comodo.svg" alt="Comodo" width="86" height="22"></noscript></a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/sectigo.html"><img alt="Sectigo" width="86" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-sectigo.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-sectigo.svg" alt="Sectigo" width="86" height="22"></noscript></a></li>
+</ul>
+</div>
+</li>
+<li class="products-link"> <a href="https://cheapsslsecurity.com/sslproducts.html"> <i class="icon-nav-arrowone"><img alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class=" lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/mainmnu-arrowdown.svg"><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" alt="Arrow Down"></noscript></i> <span class="nav-link txtspacing">SSL Products</span> <span class="nav-link-help">What type do you need?</span> </a>
+<div id="products-nav" class="nav-level-2 navtwo">
+<ul class="submenu">
+<li class="firstlink sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/domainvalidatedssl.html"> <span><img alt="Domain Validation" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-domain-validataion.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-domain-validataion.svg" alt="Domain Validation" width="18" height="18"></noscript></span>DV SSL Certificates
+<ul class="newproduct">
+<li>Secure your site in 5 minutes</li>
+<li>Our cheapest price: $4.97/year</li>
+</ul>
+</a> </li>
+<li class="sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/cheap-wildcard-ssl-certificates.html"><span><img alt="Wildcard Certificates" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-wildcard.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-wildcard.svg" alt="Wildcard Certificates" width="18" height="18"></noscript></span>Wildcard SSL Certificates
+<ul class="newproduct">
+<li>Secure unlimited subdomains</li>
+<li>Our cheapest price: $49.76/year</li>
+</ul>
+</a> </li>
+<li class="sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/extendedvalidation.html"><span><img alt="Extended Validation" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-extended-validation.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-extended-validation.svg" alt="Extended Validation" width="18" height="18"></noscript></span>EV SSL Certificates
+<ul class="newproduct">
+<li>Show your company name in the address bar</li>
+<li>Our cheapest price: $69.85/year</li>
+</ul>
+</a></li>
+<li class="sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/organizationvalidatedssl.html"><span><img alt="Organization Validation" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-organization.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-organization.svg" alt="Organization Validation" width="18" height="18"></noscript></span>OV SSL Certificates
+<ul class="newproduct">
+<li>Validate your organization with SSL</li>
+<li>Our cheapest price: $23.51/year</li>
+</ul>
+</a></li>
+<li class="sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/multi-domain-ssl-certificates.html"><span><img alt="Multi-Domain Certs" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-multidomain-cert.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-multidomain-cert.svg" alt="Multi-Domain Certs" width="18" height="18"></noscript></span>Multi-Domain SSL Certificates
+<ul class="newproduct">
+<li>Secure up to 250 different websites</li>
+<li>Our cheapest price: $18.02/year</li>
+</ul>
+</a></li>
+<li class="sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/multi-domain-wildcard-ssl-certificates.html"><span><img alt="Multi-Domain Wildcart Certs" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-multidomain-wildcard.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-multidomain-wildcard.svg" alt="Multi-Domain Wildcart Certs" width="18" height="18"></noscript></span>Multi-Domain Wildcard SSL
+<ul class="newproduct">
+<li>Secure up to 250 domains w/subdomains</li>
+<li>Our cheapest price: $148.18/year</li>
+</ul>
+</a></li>
+<li class="sslpromenu"> <a href="https://cheapsslsecurity.com/sslproducts/codesigningcertificate.html"><span><img alt="Code Signing" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-code-signing.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-code-signing.svg" alt="Code Signing" width="18" height="18"></noscript></span>Code Signing Certificates
+<ul class="newproduct">
+<li>Sign &amp; secure your executable software</li>
+<li>Our cheapest price: $69.17/year</li>
+</ul>
+</a></li>
+<li class="sslpromenu"><a href="https://cheapsslsecurity.com/sslproducts/renewssl.html"><span><img alt="SSL Renewals" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-renewals.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-renewals.svg" alt="SSL Renewals" width="18" height="18"></noscript></span>Renew SSL Certificate
+<ul class="newproduct">
+<li>Renew SSL certificate at cheap prices</li>
+<li>Our cheapest price: $5.45/year</li>
+</ul>
+</a></li>
+<li class="sslpromenu"><a href="https://cheapsslsecurity.com/sslcompare/compare-ssl-certificates-prices.html"><span><img alt="Compare SSL" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-compare.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-compare.svg" alt="Compare SSL" width="18" height="18"></noscript></span>Compare SSL Certificates
+<ul class="newproduct">
+<li>Find the best certificate for your needs</li>
+<li>Compare DV, EV, Wildcard &amp; MDC SSL</li>
+</ul>
+</a></li>
+<li class="sslpromenu"><a href="https://cheapsslsecurity.com/comodo/hackerguardianpciscancontrolcenter.html"><span><img alt="HackerGuardian PCI Scan Control" width="18" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-hacker.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-hacker.svg" alt="HackerGuardian PCI Scan Control" width="18" height="18"></noscript></span>HackerGuardian PCI Scan Control
+<ul class="newproduct">
+<li>Comply with PCI scanning requirements</li>
+<li>Our cheapest price: $70.83/year</li>
+</ul>
+</a></li>
+<div class="clear"></div>
+</ul>
+</div>
+</li>
+<li class="nav-pricing"> <a href="https://cheapsslsecurity.com/support/sslsupport.html"> <i class="icon-nav-arrowone"><img alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class=" lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/mainmnu-arrowdown.svg"><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" alt="Arrow Down"></noscript></i> <span class="nav-link txtspacing">Support</span> <span class="nav-link-help">Blog, Support</span> </a>
+<div id="pricing-nav" class="nav-level-2">
+<ul class="submenu">
+<li> <a href="https://cheapsslsecurity.com/support/whysocheap.html"> <span><img alt="Why So Cheap?" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-whysocheap.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-whysocheap.svg" alt="Why So Cheap?"></noscript></span>Why So Cheap?</a></li>
+<li><a href="https://cheapsslsecurity.com/ssltools/"><span><img alt="SSL Tools" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-ssltools.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-ssltools.svg" alt="SSL Tools"></noscript></span>SSL Tools</a></li>
+<li><a href="https://cheapsslsecurity.com/p" target="_blank"> <span><img alt="SSL Resource" width="24" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-resources.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-resources.svg" alt="SSL Resource" width="24" height="22"></noscript></span>SSL Resource</a></li>
+<li><a href="https://knowledge.cheapsslsecurity.com/support/home" target="_blank" rel="noindex, nofollow"> <span><img alt="Knowledgebase" width="24" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-kb.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-kb.svg" alt="Knowledgebase" width="24" height="22"></noscript></span>Knowledgebase</a></li>
+<li><a href="https://cheapsslsecurity.com/support/contactus.html"><span><img alt="Contact Us" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-contactus.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-contactus.svg" alt="Contact Us"></noscript></span>Contact Us</a></li>
+<li><a href="https://cheapsslsecurity.com/client/eligiblecancellationorderlist.html"><span><img alt="Refund Request" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-refundrequest.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-refundrequest.svg" alt="Refund Request"></noscript></span>Refund Request</a></li>
+<li><a href="https://cheapsslsecurity.com/support/contactus.html"><span><img alt="Submit a Ticket" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-submitaticket.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-submitaticket.svg" alt="Submit a Ticket"></noscript></span>Submit a Ticket</a></li>
+<li><a href="https://cheapsslsecurity.com/blog/" target="_blank"><span><img alt="Blog" width="24" height="22" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-blog.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-blog.svg" alt="Blog" width="24" height="22"></noscript></span>Blog</a></li>
+<li><a href="https://cheapsslsecurity.com/support/sslfaq.html"><span><img alt="FAQ" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-faq.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-support-faq.svg" alt="FAQ"></noscript></span>FAQ</a></li>
+<div class="clear"> </div>
+</ul>
+</div>
+</li>
+<li class="buynows-link"> <a href="https://cheapsslsecurity.com/buy-ssl-certificate.html"> <i class="icon-nav-arrowone"><img alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class=" lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/mainmnu-arrowdown.svg"><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Arrow Down" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/mainmnu-arrowdown.svg" alt="Arrow Down"></noscript></i> <span class="nav-link txtspacing">Buy Now</span> <span class="nav-link-help">Save big today</span> </a>
+<div id="buynows-nav" class="nav-level-2">
+<ul class="submenu">
+<li>
+<h3><a href="https://cheapsslsecurity.com/sslproducts/cheap-wildcard-ssl-certificates.html"><span><img alt="Wildcard SSL Certificates" height="24" width="24" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-wildcard.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-wildcard.svg" alt="Wildcard SSL Certificates" height="24" width="24"></noscript></span>Wildcard SSL Certificates</a></h3>
+<ul class="sslbuynow">
+<li><a href="https://cheapsslsecurity.com/comodo/positivessl-wildcard.html">Comodo PositiveSSL Wildcard Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/rapidssl/rapidsslwildcard.html">RapidSSL Wildcard Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/comodo/essentialsslwildcard.html">Comodo EssentialSSL Wildcard Certificate</a></li>
+<li class="viewmore"><a href="https://cheapsslsecurity.com/sslproducts/cheap-wildcard-ssl-certificates.html">View All</a></li>
+</ul>
+</li>
+<li>
+<h3><a href="https://cheapsslsecurity.com/sslproducts/domainvalidatedssl.html"><span><img alt="Domain Validation" height="24" width="24" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-domain-validataion.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-domain-validataion.svg" alt="Domain Validation" height="24" width="24"></noscript></span>Domain Validation</a></h3>
+<ul class="sslbuynow">
+<li><a href="https://cheapsslsecurity.com/comodo/positivessl.html">Comodo PositiveSSL Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/rapidssl/rapidsslcertificate.html">RapidSSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/geotrust/quicksslpremium.html">GeoTrust QuickSSL Premium</a></li>
+<li class="viewmore"><a href="https://cheapsslsecurity.com/sslproducts/domainvalidatedssl.html">View All</a></li>
+</ul>
+</li>
+<li class="firstlink">
+<h3><a href="https://cheapsslsecurity.com/sslproducts/extendedvalidation.html"><span><img alt="Extended Validation" height="24" width="24" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-extended-validation.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-extended-validation.svg" alt="Extended Validation" height="24" width="24"></noscript></span>Extended Validation</a></h3>
+<ul class="sslbuynow">
+<li><a href="https://cheapsslsecurity.com/geotrust/truebusinessidev.html">Geotrust True BusinessID with EV</a></li>
+<li><a href="https://cheapsslsecurity.com/comodo/evssl.html">Comodo EV SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/comodo/positivessl-ev.html">Comodo PositiveSSL EV</a></li>
+<li class="viewmore"> <a href="https://cheapsslsecurity.com/sslproducts/extendedvalidation.html">View All</a></li>
+</ul>
+</li>
+<li>
+<h3><a href="https://cheapsslsecurity.com/sslproducts/multi-domain-ssl-certificates.html"><span><img alt="Multi-Domain Certs" height="24" width="24" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-multidomain-cert.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-multidomain-cert.svg" alt="Multi-Domain Certs" height="24" width="24"></noscript></span>Multi-Domain SSL</a></h3>
+<ul class="sslbuynow">
+<li><a href="https://cheapsslsecurity.com/geotrust/truebusinessidevmultidomainsan-ucc.html">GeoTrust EV Multi-Domain SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/geotrust/truebusinessidmultidomainssl.html">GeoTrust Multi-Domain SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/comodo/multi-domainssl.html">Comodo Multi-Domain SSL</a></li>
+<li class="viewmore"><a href="https://cheapsslsecurity.com/sslproducts/multi-domain-ssl-certificates.html">View All</a></li>
+</ul>
+</li>
+<li>
+<h3><a href="https://cheapsslsecurity.com/sslproducts/codesigningcertificate.html"><span><img alt="Code Signing" height="24" width="24" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-code-signing.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-code-signing.svg" alt="Code Signing" height="24" width="24"></noscript></span>Code Signing</a></h3>
+<ul class="sslbuynow">
+<li><a href="https://cheapsslsecurity.com/comodo/codesigningcertificate.html">Comodo Code Signing Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/sectigo/sectigo-code-signing-certificate.html">Sectigo Code Signing Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/thawte/codesigningcertificate.html">Thawte Code Signing Certificate</a></li>
+<li class="viewmore"><a href="https://cheapsslsecurity.com/sslproducts/codesigningcertificate.html">View All</a></li>
+</ul>
+</li>
+<li>
+<h3><a href="https://cheapsslsecurity.com/sslproducts/organizationvalidatedssl.html"><span><img alt="Organization Validation" height="24" width="24" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-organization.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-type-organization.svg" alt="Organization Validation" height="24" width="24"></noscript></span>Organization Validation</a></h3>
+<ul class="sslbuynow">
+<li><a href="https://cheapsslsecurity.com/comodo/instantssl.html">Comodo Instant SSL</a> </li>
+<li><a href="https://cheapsslsecurity.com/comodo/instantsslpro.html">Comodo Instant SSL Pro</a> </li>
+<li><a href="https://cheapsslsecurity.com/geotrust/truebusinessid.html">GeoTrust True BusinessID</a></li>
+<li class="viewmore"><a href="https://cheapsslsecurity.com/sslproducts/organizationvalidatedssl.html">View All</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+</li>
+<li class="mnucountry"> <a href="javascript:;">
+<span class="smallflag"><img id="imgFlag" alt="United States" width="24" height="18" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/us.svg" class=" lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/us.svg"><noscript><img id="imgFlag" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/us.svg" alt="United States" width="24" height="18"></noscript></span> </a>
+<div class="nav-level-2" id="countrilist">
+<ul>
+<li class="cntrytitle">
+<h3>Choose Region:</h3>
+</li>
+<li> <a href="https://cheapsslsecurity.com/"> <img alt="united states flag icon" width="43" height="32" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/us.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="united states flag icon" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/us.svg" width="43" height="32"></noscript>
+<label>USD ($)</label>
+</a> </li>
+<li> <a href="https://cheapsslsecurity.co.uk/"> <img alt="united kingdom country icon" width="43" height="32" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/gb.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="united kingdom country icon" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/gb.svg" width="43" height="32"></noscript>
+<label>GBP (£)</label>
+</a> </li>
+<li> <a href="https://cheapsslsecurity.in/"> <img alt="india flag icon" width="44" height="32" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/in.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="india flag icon" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/in.svg" width="44" height="32"></noscript>
+<label>INR (₹)</label>
+</a> </li>
+<li> <a href="https://cheapsslsecurity.com.sg/"> <img alt="singapore country icon" width="44" height="32" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/sg.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="singapore country icon" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/sg.svg" width="44" height="32"></noscript>
+<label>SGD ($)</label>
+</a> </li>
+<li> <a href="https://cheapsslsecurity.com.ph/"> <img alt="philippines flag icon" width="44" height="32" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/ph.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="philippines flag icon" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/ph.svg" width="44" height="32"></noscript>
+<label>PHP (₱)</label>
+</a> </li>
+<li> <a href="https://cheapsslsecurity.com.au/"> <img alt="australia flag icon" width="44" height="32" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/au.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="australia flag icon" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/au.svg" width="44" height="32"></noscript>
+<label>AUD ($)</label>
+</a> </li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="clear"> </div>
+</nav>
+<div class="mobile-menu"> <a href="https://cheapsslsecurity.com/p/http2-vs-http1/#" id="showmobmenu"></a>
+<nav id="mobmenu" class="left hide">
+<ul>
+<li class="mobmnuicon"><a href="https://cheapsslsecurity.com/p/http2-vs-http1/#" id="hidemobmenu"></a></li>
+<li><a href="javascript:;">SSL Brands <i class="fa fa-caret-down"></i></a>
+<ul>
+<li><a href="https://cheapsslsecurity.com/sslbrands.html">SSL Brands</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/digicert.html">Digicert</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/rapidssl.html">RapidSSL</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/comodo.html">Comodo</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/geotrust.html">GeoTrust</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/thawte.html">Thawte</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/sectigo.html">Sectigo</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/symantec.html">Symantec</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">SSL Products <i class="fa fa-caret-down"></i></a>
+<ul>
+<li><a href="https://cheapsslsecurity.com/sslproducts.html">SSL Products</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/domainvalidatedssl.html">DV SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/cheap-wildcard-ssl-certificates.html">Wildcard SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/extendedvalidation.html">EV SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/organizationvalidatedssl.html">OV SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/multi-domain-ssl-certificates.html">Multi-Domain SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/multi-domain-wildcard-ssl-certificates.html">Multi-Domain Wildcard SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/codesigningcertificate.html">Code Signing Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/renewssl.html">Renew SSL Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/sslcompare/compare-ssl-certificates-prices.html">Compare SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/comodo/hackerguardianpciscancontrolcenter.html">HackerGuardian PCI Scan Control</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Support <i class="fa fa-caret-down"></i></a>
+<ul>
+<li><a href="https://cheapsslsecurity.com/support/sslsupport.html">Support</a></li>
+<li><a href="https://cheapsslsecurity.com/support/whysocheap.html">Why So Cheap?</a></li>
+<li><a href="https://cheapsslsecurity.com/ssltools/">SSL Tools</a></li>
+<li><a href="https://cheapsslsecurity.com/p" target="_blank">SSL Resource</a></li>
+<li><a href="https://knowledge.cheapsslsecurity.com/support/home" target="_blank" rel="noindex, nofollow">Knowledgebase</a></li>
+<li><a href="https://cheapsslsecurity.com/support/contactus.html"> Contact Us</a></li>
+<li><a href="https://cheapsslsecurity.com/client/orders.html">Refund Request</a></li>
+<li><a href="https://cheapsslsecurity.com/support/contactus.html">Submit a Ticket</a></li>
+<li><a href="https://cheapsslsecurity.com/support/sslfaq.html">FAQ</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Buy Now <i class="fa fa-caret-down"></i></a>
+<ul>
+<li><a href="https://cheapsslsecurity.com/buysslcertificate.html">Buy Now</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/cheap-wildcard-ssl-certificates.html">WildCard SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/domainvalidatedssl.html">Domain Validation</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/extendedvalidation.html">EV SSL Certificate</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/multi-domain-ssl-certificates.html">Multi-Domain SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/codesigningcertificate.html">Code Signing Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/organizationvalidatedssl.html">Organization Validation</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="clear"> </div>
+</div>
+</header>
+<div class="banners">
+<div class="homebancvr">
+<div class="newbanner">
+<div class="banner-lts">
+<p>SSL/TLS Certificates</p>
+<span>Sold at <span>Ridiculously</span> Low Prices.</span></div>
+<div class="banner-rts">
+<object type="image/svg+xml" data="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/img-banner-lady-fully.svg">
+</object>
+<map name="Map">
+<area shape="poly" coords="176,4,186,23,191,43,194,70,181,92,173,104,171,138,191,167,223,148,263,137,284,135,287,145,241,158,248,187,264,196,281,236,293,275,298,296,307,329,637,331,659,334,659,166,658,1,226,1" href="https://cheapsslsecurity.com/rapidssl/rapidsslwildcard.html">
+</map>
+<div class="bantoptxts">
+<p class="getgreen"><a href="https://cheapsslsecurity.com/rapidssl/rapidsslwildcard.html">Secure Unlimited Subdomains</a></p>
+<p class="onlyprice"><a href="https://cheapsslsecurity.com/rapidssl/rapidsslwildcard.html">RAPIDSSL Wildcard For Only $49.76</a></p>
+<p class="offertxt"><a href="https://cheapsslsecurity.com/rapidssl/rapidsslwildcard.html">Limited Time Sale</a></p>
+</div>
+<div class="banbot-sections" style="bottom:61px"><span style="margin-bottom:15px"><img alt="RapidSSL logo" width="117" height="30" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-rapidssl.svg" class="showimg lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/pro-rapidssl.svg"><noscript><img class="showimg" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-rapidssl.svg" alt="RapidSSL logo" width="117" height="30" /></noscript></span>
+<a href="https://cheapsslsecurity.com/checkout.ashx?m=72&amp;productid=205&amp;promo=">Get Wildcard SSL For $49.76 (USD)</a></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="main">
+<div class="wrapper">
+<div id="primary">
+<div id="content" role="main">
+<div class="breadcrumb-container theme5">
+<ul>
+<li>
+<a title="SSL Help" href="https://cheapsslsecurity.com/p">
+<span>SSL Help</span>
+</a>
+<span class="separator">&gt;&gt;</span>
+</li>
+<li>
+<a title="SSL Basics" href="https://cheapsslsecurity.com/p/ssl-basics/">
+<span>SSL Basics</span>
+</a>
+<span class="separator">&gt;&gt;</span>
+</li>
+<li>
+<a title="HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained" href="https://cheapsslsecurity.com/p/http2-vs-http1/">
+<span>HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained</span>
+</a>
+<span class="separator">&gt;&gt;</span>
+</li>
+</ul>
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement":
+            [
+                                        {
+                            "@type": "ListItem",
+                            "position":2,
+                            "item":
+                            {
+                                "@id": "https://cheapsslsecurity.com/p/http2-vs-http1/",
+                                "name": "HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained"
+                            }
+                        }                                    ]
+        }
+    </script>
+<style type="text/css">
+        .breadcrumb-container {
+            font-size: 13px;
+        }
+        .breadcrumb-container ul {
+            margin: 0;
+            padding: 0;
+        }
+        .breadcrumb-container li {
+            box-sizing: unset;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        .breadcrumb-container li a {
+            box-sizing: unset;
+            padding: 0 10px;
+        }
+        .breadcrumb-container {
+            font-size: 14px  !important;
+            padding: 5px;
+            margin: 5px;
+        }
+        .breadcrumb-container li a{
+            color:  #ffffff  !important;
+            font-size:  14px  !important;
+            line-height:  14px  !important;
+        }
+        .breadcrumb-container li .separator {
+            color: #000000  !important;
+            font-size:  14px  !important;
+        }
+                    .breadcrumb-container li:last-child .separator {
+                display: none;
+            }
+                </style>
+<style type="text/css">
+        .breadcrumb-container.theme5 li {
+            display: inline-block;
+            margin: 0 14px;
+            padding: 0;
+        }
+
+        .breadcrumb-container.theme5 a {
+            background: #ff7146;
+            color: rgb(102, 102, 102);
+            display: inline-block;
+            font-size: 14px;
+            height: 16px;
+            margin: 0;
+            padding: 5px 10px;
+            text-decoration: none;
+            position:relative;
+        }
+
+        .breadcrumb-container.theme5 a::before {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: #ff7146 #ff7146 #ff7146 rgba(0, 0, 0, 0);
+            border-image: none;
+            border-style: solid;
+            border-width: 13px;
+            content: " ";
+            display: block;
+            height: 0;
+            left: -18px;
+            position: absolute;
+            top: 0;
+            width: 0;
+        }
+        .breadcrumb-container.theme5 a::after {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff7146;
+            border-image: none;
+            border-style: solid;
+            border-width: 13px;
+            content: " ";
+            display: inline-block;
+            height: 0;
+            line-height: 0;
+            position: absolute;
+            right: -26px;
+            top: 0;
+            width: 0;
+        }
+
+        .breadcrumb-container.theme5 .separator {
+            display: none;
+        }
+
+    </style>
+<style type="text/css">
+        .breadcrumb-container{
+	font-family: archivo_narrowbold;
+}
+.breadcrumb-container ul{}
+.breadcrumb-container li{}
+.breadcrumb-container a{}
+.breadcrumb-container .separator{}
+
+    </style>
+<script>
+            </script>
+</div>
+<nav id="nav-single">
+<h3 class="assistive-text">Post navigation</h3>
+<span class="nav-previous"><a href="https://cheapsslsecurity.com/p/what-is-the-sectigo-trust-seal-how-do-i-get-it/" rel="prev"><span class="meta-nav">←</span> Previous</a></span>
+<span class="nav-next"><a href="https://cheapsslsecurity.com/p/the-advantages-of-http2/" rel="next">Next <span class="meta-nav">→</span></a></span>
+</nav>
+<article id="post-397" class="post-397 post type-post status-publish format-standard hentry category-ssl-basics tag-https2">
+<header class="entry-header">
+<h1 class="entry-title">HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained</h1>
+<div class="entry-meta">
+<span class="sep">Posted on </span><a href="https://cheapsslsecurity.com/p/http2-vs-http1/" title="6:01 am" rel="bookmark"><time class="entry-date" datetime=""></time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://cheapsslsecurity.com/p/author/casey-crane/" title="View all posts by casey.crane" rel="author">casey.crane</a></span></span> </div>
+</header>
+<div id="post-ratings-397" class="post-ratings" itemscope="" itemtype="http://schema.org/Article" data-nonce="f035eea379"><img width="12" height="12" id="rating_397_1" alt="1 Star" title="1 Star" onmouseover="current_rating(397, 1, &#39;1 Star&#39;);" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" data-src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="12" height="12" id="rating_397_1" src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" alt="1 Star" title="1 Star" onmouseover="current_rating(397, 1, '1 Star');" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /></noscript><img width="12" height="12" id="rating_397_2" alt="2 Stars" title="2 Stars" onmouseover="current_rating(397, 2, &#39;2 Stars&#39;);" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" data-src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="12" height="12" id="rating_397_2" src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" alt="2 Stars" title="2 Stars" onmouseover="current_rating(397, 2, '2 Stars');" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /></noscript><img width="12" height="12" id="rating_397_3" alt="3 Stars" title="3 Stars" onmouseover="current_rating(397, 3, &#39;3 Stars&#39;);" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" data-src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="12" height="12" id="rating_397_3" src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" alt="3 Stars" title="3 Stars" onmouseover="current_rating(397, 3, '3 Stars');" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /></noscript><img width="12" height="12" id="rating_397_4" alt="4 Stars" title="4 Stars" onmouseover="current_rating(397, 4, &#39;4 Stars&#39;);" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" data-src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="12" height="12" id="rating_397_4" src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" alt="4 Stars" title="4 Stars" onmouseover="current_rating(397, 4, '4 Stars');" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /></noscript><img width="12" height="12" id="rating_397_5" alt="5 Stars" title="5 Stars" onmouseover="current_rating(397, 5, &#39;5 Stars&#39;);" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" data-src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img width="12" height="12" id="rating_397_5" src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_on.gif" alt="5 Stars" title="5 Stars" onmouseover="current_rating(397, 5, '5 Stars');" onmouseout="ratings_off(21.2, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /></noscript> (<strong>37</strong> votes, average: <strong>21.19</strong> out of 5)<br><span class="post-ratings-text" id="ratings_397_text"></span><meta itemprop="name" content="HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained"><meta itemprop="headline" content="HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained"><meta itemprop="description" content="HTTP2 Vs. HTTP1 or HTTP1 Vs. HTTP2 - Let&#39;s Understand The Two Protocols
+HTTP/1.1 has been around for more than a decade. With Google’s SPDY leading the way in 2015, the IETF (Internet Engineering Tas..."><meta itemprop="datePublished" content="2019-07-24T06:01:17+00:00"><meta itemprop="dateModified" content="2021-09-13T08:26:18+00:00"><meta itemprop="url" content="https://cheapsslsecurity.com/p/http2-vs-http1/"><meta itemprop="author" content="casey.crane"><meta itemprop="mainEntityOfPage" content="https://cheapsslsecurity.com/p/http2-vs-http1/"><div style="display: none;" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><meta itemprop="name" content="Cheap SSL Security"><meta itemprop="url" content="https://cheapsslsecurity.com/p"><div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/headers/willow.jpg"></div></div><div style="display: none;" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"><meta itemprop="bestRating" content="5"><meta itemprop="worstRating" content="1"><meta itemprop="ratingValue" content="21.19"><meta itemprop="ratingCount" content="37"></div></div><div id="post-ratings-397-loading" class="post-ratings-loading"><img width="16" height="16" data-src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/loading.gif" class="post-ratings-image lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/loading.gif" width="16" height="16" class="post-ratings-image" /></noscript>Loading...</div> <div class="entry-content">
+<h2>HTTP2 Vs. HTTP1 or HTTP1 Vs. HTTP2 – Let’s Understand The Two Protocols</h2>
+<p>HTTP/1.1 has been around for more than a decade. With Google’s SPDY leading the way in 2015, the IETF (Internet Engineering Task Force) gave us HTTP/2, which introduces several features to reduce page load times.&nbsp;Let’s compare HTTP2 Vs. HTTP1.1 in detail.</p>
+<p><span id="more-397"></span></p>
+<p>HTTP/2 achieves faster webpage loading without performance optimizations that require extensive human efforts in terms of development. It significantly reduces the complexities that had crept into HTTP/1.1 and gives us a robust protocol which, though not without its flaws, will perhaps stand the test of time. Before making this leap forward, let’s trace our steps back to when the internet was in its infancy to understand how the different versions evolved into the current form.</p>
+<h2>The Beginnings of HTTP &amp; The Internet</h2>
+<p>Our story begins in 1969, with a program called Advanced Research Projects Agency Network (ARPANET). ARPANET used packet switching and allowed multiple computers to communicate with each other on a single network. However, this was just a by-product. The original intention behind ARPANET was to design a time-sharing system that allowed research institutes to share their computer resources for effective utilization of processing power.</p>
+<div class="graysection">
+<h2>Purchase a Comodo SSL Certificate &amp; Get a Free Comodo Secure Seal</h2>
+<p>We offer the best discount on all types of Comodo SSL Certificates, which come with complimentary Comodo Secure Seal.</p>
+<p><a class="comparebtn" href="https://cheapsslsecurity.com/sslbrands/comodo.html">Shop Comodo SSL Certificates and Save Up to 89%</a></p>
+</div>
+<p>Before then, sometime during the 19th century, the seeds for the existence of the internet as we know it today had already been sown with the invention of electricity and the telegraph. With Morse sending the first telegraphic message in 1844 and the first cable being laid across Atlantic, the telegraph network infrastructure had spread its roots through continents and across oceans. In years to come, this would become the very foundation on which the internet was built. In 1973, Kahn and Cerf designed the TCP/IP protocol suite which was adopted by ARPANET a decade later, and from this point on, we witness the development of an interconnected network. The internet took a more recognizable form with the invention of the World Wide Web (that used HTTP as its underlying protocol) by Tim Berners-Lee and the Commercial Internet eXchange (CIX) that allowed a free exchange of TCP/IP traffic between ISPs.</p>
+<h2>Evolution of HTTP</h2>
+<p>HTTP (Hypertext Transfer Protocol) is a set of rules that runs on top of the TCP/IP suite of protocols and defines how files are to be transferred between clients and servers on the world wide web.</p>
+<p><img alt="HTTP Protocol Process" width="500" height="300" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png 500w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol-300x180.png 300w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png" data-sizes="(max-width: 500px) 100vw, 500px" class="aligncenter wp-image-398 size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="aligncenter wp-image-398 size-full" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png" alt="HTTP Protocol Process" width="500" height="300" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol.png 500w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-protocol-300x180.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></p>
+<h2>The Beginning of HTTP: Version 0.9 &amp; 1.0</h2>
+<p>In the earliest phase (HTTP/0.9), the HTTP protocol did not use headers and only transmitted plain HTML files. It was a one-line protocol only supporting the GET method.</p>
+<p><img alt="Figure 2: HTTP/0.9 - Example request and response" width="408" height="308" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9.png 408w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9-300x226.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9-397x300.png 397w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9.png" data-sizes="(max-width: 408px) 100vw, 408px" class="aligncenter wp-image-399 size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="aligncenter wp-image-399 size-full" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9.png" alt="Figure 2: HTTP/0.9 - Example request and response" width="408" height="308" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9.png 408w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9-300x226.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-0-9-397x300.png 397w" sizes="(max-width: 408px) 100vw, 408px" /></noscript></p>
+<p>As the need to exchange more than just plain HTML emerged along with the client and server applications becoming more mature, HTTP/1.0 (between 1991-1996) introduced several new features.</p>
+<h2>Key Features of HTTP/1.0:</h2>
+<ul>
+<li>The concept of headers both for requests (from the client machine) as well as responses (from servers) was introduced. The use of headers such as GET, POST, HEAD added extended flexibility, none of which was possible with the earlier version.</li>
+<li>Version information was now included.</li>
+<li>It allowed a single request/response for every TCP connection.</li>
+<li>Status codes were used to indicate successful requests and to indicate transmission errors.</li>
+<li>The content-type header made it possible to send files other than plain HTML, including scripts and media.</li>
+</ul>
+<h2>Created for Added Security: HTTPS</h2>
+<p>In 1994, Netscape Communications created HTTPS (Hypertext Transfer Protocol Secure) to be used with SSL for its web browser, Netscape Navigator. The need for encrypted transmission channels emerged as the applications being designed shifted towards a more commercial market where advertisers, unknown individuals, and cybercriminals could have easy access to personal data. SSL evolved into TLS with TLS version 1.2 and 1.3 being used currently.</p>
+<h2>The Protocol Serving Netizens for Over 15 Years: HTTP/1.1</h2>
+<p>HTTP/1.1, the first standardized version of HTTP, was introduced in 1997. It presented significant performance optimizations (over HTTP/0.9 and HTTP/1.0) and transformed the way requests and responses were exchanged between clients and servers.</p>
+<p><img alt="Figure 3: HTTP/1.1 - Example request and response" width="544" height="763" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-1-1.png 544w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-1-1-214x300.png 214w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-1-1.png" data-sizes="(max-width: 544px) 100vw, 544px" class="aligncenter wp-image-400 size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="aligncenter wp-image-400 size-full" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-1-1.png" alt="Figure 3: HTTP/1.1 - Example request and response" width="544" height="763" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-1-1.png 544w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-1-1-214x300.png 214w" sizes="(max-width: 544px) 100vw, 544px" /></noscript></p>
+<h2>Key Features of HTTP/1.1:</h2>
+<ul>
+<li>It was no longer required for each connection to be terminated immediately after every request was served with a response; instead, with the keep-alive header, it was possible to have persistent connections. It allowed multiple requests/responses per TCP connection.</li>
+<li>The Upgrade header was used to indicate a preference from the client that made it possible to switch to a more preferred protocol if found appropriate by the server.</li>
+<li>HTTP/1.1 provided support for chunk transfers that allowed streaming of content dynamically as chunks and for additional headers to be sent after the message body. This enhancement was particularly useful in cases where values of a field remained unknown until the content had been produced. For example, when the content had to be digitally signed, it was not possible to do so before the entire content gets generated.</li>
+<li>Other features that reinforced its stability were introduced such as:
+<ul>
+<li>pipelining (the second request is sent before the response to the first is adequately served)</li>
+<li>content negotiation (an exchange between client and server to determine the media type, it also provides the provision to serve different versions of a resource at the same URI)</li>
+<li>cache control (used to specify caching policies in both requests and responses)</li>
+</ul>
+</li>
+</ul>
+<h2>The Protocol Designed to Speed Up Today’s Complex Web pages: HTTP/2</h2>
+<p>At the beginning of 2010, Google introduced an experimental protocol, SPDY, which supported multiplexing (multiple requests/responses sent and received asynchronously over a single TCP connection) but as it gained traction IETF’s HTTP Working Group came up with HTTP/2 in 2015, which is based on the SPDY protocol.</p>
+<h2>Key Features of HTTP/2:</h2>
+<ul>
+<li>It introduces the concept of a server push where the server anticipates the resources that will be required by the client and pushes them prior to the client making requests. The client retains the authority to deny the server push; however, in most cases, this feature adds a lot of efficiency to the process.</li>
+</ul>
+<p><img alt="Figure 4: Server push in HTTP/2" width="480" height="315" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2.png 598w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2-300x197.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2-458x300.png 458w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2.png" data-sizes="(max-width: 480px) 100vw, 480px" class="aligncenter wp-image-402 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="aligncenter wp-image-402" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2.png" alt="Figure 4: Server push in HTTP/2" width="480" height="315" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2.png 598w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2-300x197.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/server-push-in-http-2-458x300.png 458w" sizes="(max-width: 480px) 100vw, 480px" /></noscript></p>
+<ul>
+<li>Introduces the concept of multiplexing that interleaves the requests and responses without head-of-line blocking and does so over a single TCP connection.</li>
+</ul>
+<p><img alt="Figure 5: Multiplexing in HTTP/2" width="360" height="336" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2.png 360w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2-300x280.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2-321x300.png 321w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2.png" data-sizes="(max-width: 360px) 100vw, 360px" class="aligncenter wp-image-403 size-full lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="aligncenter wp-image-403 size-full" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2.png" alt="Figure 5: Multiplexing in HTTP/2" width="360" height="336" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2.png 360w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2-300x280.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/multiplexing-http-2-321x300.png 321w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></p>
+<ul>
+<li>It is a binary protocol i.e. only binary commands in the form of 0s and 1s are transmitted over the wire. The binary framing layer divides the message into frames that are segregated based on their type – Data or Header. This feature greatly increases efficiency in terms of security, compression and multiplexing.</li>
+</ul>
+<p><img alt="Figure 6: Binary Framing Layer" width="450" height="232" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-1024x529.png 1024w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-300x155.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-768x397.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-500x258.png 500w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer.png 1067w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-1024x529.png" data-sizes="(max-width: 450px) 100vw, 450px" class="aligncenter wp-image-404 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="aligncenter wp-image-404" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-1024x529.png" alt="Figure 6: Binary Framing Layer" width="450" height="232" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-1024x529.png 1024w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-300x155.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-768x397.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer-500x258.png 500w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/binary-framing-layer.png 1067w" sizes="(max-width: 450px) 100vw, 450px" /></noscript></p>
+<p><img alt="Figure 7: HTTP/2 - Binary Traffic" width="700" height="350" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic.png 997w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-300x150.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-768x384.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-500x250.png 500w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic.png" data-sizes="(max-width: 700px) 100vw, 700px" class="aligncenter wp-image-405 lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/http-2-binary-traffic.png" sizes="(max-width: 700px) 100vw, 700px" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic.png 997w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-300x150.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-768x384.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-500x250.png 500w"><noscript><img class="aligncenter wp-image-405" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic.png" alt="Figure 7: HTTP/2 - Binary Traffic" width="700" height="350" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic.png 997w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-300x150.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-768x384.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http-2-binary-traffic-500x250.png 500w" sizes="(max-width: 700px) 100vw, 700px" /></noscript></p>
+<ul>
+<li>HTTP/2 uses HPACK header compression algorithm that is resilient to attacks like CRIME and utilizes static Huffman encoding.</li>
+</ul>
+<p>HTTP/3, the next version in the series, is based on Google’s QUIC which, unlike its precursors is a drastic shift to UDP. Given the gradual adoption rate of HTTP/2, HTTP/3 with its security challenges (that comes into play the moment we switch from TCP to UDP) is expected to face some difficulties.</p>
+<p><img alt="Figure 8: Evolution of HTTP - Timeline" width="800" height="500" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http.png 972w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-300x187.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-768x480.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-480x300.png 480w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http.png" data-sizes="(max-width: 800px) 100vw, 800px" class="aligncenter wp-image-406 lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/evolution-of-http.png" sizes="(max-width: 800px) 100vw, 800px" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http.png 972w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-300x187.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-768x480.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-480x300.png 480w"><noscript><img class="aligncenter wp-image-406" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http.png" alt="Figure 8: Evolution of HTTP - Timeline" width="800" height="500" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http.png 972w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-300x187.png 300w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-768x480.png 768w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/evolution-of-http-480x300.png 480w" sizes="(max-width: 800px) 100vw, 800px" /></noscript></p>
+<h2>HTTP/1.x vs HTTP/2: A Comparative Study</h2>
+<p>HTTP2 Vs. HTTP1 is not a debate at all. HTTP2 is much faster and more reliable than HTTP1. HTTP1 loads a single request for every TCP connection, while HTTP2 avoids network delay by using multiplexing.</p>
+<p>HTTP is a network delay sensitive protocol in the sense that if there is less network delay, then the page loads faster. However, an impressive increase in network bandwidth only slightly improves page load time. This is key to understanding the differences in performance efficiencies between the different versions of HTTP. Back in the day when people used dial up modems web pages were simple and it was the actual data transfer between the server and the client that contributed towards the largest chunk of the page load time. Today the actual downloading of resources from server takes a negligible portion of the total page load time due to the tremendous increase in bandwidth availability. It is the time taken to establish the TCP connection and making requests that impacts performance. It was initially recommended to use only two connections per hostname but today most browsers use six connections per hostname. When we talk about http vs http2 in terms of performance it is important to note that a lot of performance optimizations adopted by HTTP/1.1 introduced complexities in terms of developmental efforts as well as network congestion that HTTP/2 attempts to address.</p>
+<p>The table below points out the differentiating factors between http2 vs http1:</p>
+<p>Header CompressionHeaders are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire.Header compression is included by default in HTTP/2 using HPACK.Performance OptimizationProvides support for caching to deliver pages faster.Spriting, concatenating, inlining, domain sharding are some of the optimizations used as a workaround to the ‘six connections per host’ rule.Removes the need for unnecessary optimization hacks.Protocol TypeText based protocol that is in the readable form.It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). Needs to be converted back from binary in order to read it.SecuritySSL is not required but recommended. Digest authentication used in HTTP1.1 is an improvement over HTTP1.0. HTTPS uses SSL/TLS for secure encrypted communication.Though security is still not mandatory, it is mostly encrypted (though it is not enforced) since almost all clients require traffic to be encrypted. It also has some minimum standards, such as minimum key size for encryption. TLS 1.2 etc.</p>
+<p>Header CompressionHeaders are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire.Header compression is included by default in HTTP/2 using HPACK.Performance OptimizationProvides support for caching to deliver pages faster.Spriting, concatenating, inlining, domain sharding are some of the optimizations used as a workaround to the ‘six connections per host’ rule.Removes the need for unnecessary optimization hacks.Protocol TypeText based protocol that is in the readable form.It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). Needs to be converted back from binary in order to read it.SecuritySSL is not required but recommended. Digest authentication used in HTTP1.1 is an improvement over HTTP1.0. HTTPS uses SSL/TLS for secure encrypted communication.Though security is still not mandatory, it is mostly encrypted (though it is not enforced) since almost all clients require traffic to be encrypted. It also has some minimum standards, such as minimum key size for encryption. TLS 1.2 etc.</p>
+<table class="table" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr class="trhead">
+<td width="150">Differentiator</td>
+<td width="150">HTTP/1.0</td>
+<td width="150">HTTP/1.1</td>
+<td width="150">HTTP/2</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>1991</td>
+<td>1997</td>
+<td>2015</td>
+</tr>
+<tr>
+<td>Key Features</td>
+<td>For every TCP connection there is only one request and one response.<br>
+<img alt="HTTP1 Protocol" width="265" height="300" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1-265x300.png 265w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1.png 373w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1-265x300.png" data-sizes="(max-width: 265px) 100vw, 265px" class="alignright size-medium wp-image-416 lazyloaded" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/http1-265x300.png" sizes="(max-width: 265px) 100vw, 265px" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1-265x300.png 265w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1.png 373w"><noscript><img class="alignright size-medium wp-image-416" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1-265x300.png" alt="HTTP1 Protocol" width="265" height="300" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1-265x300.png 265w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http1.png 373w" sizes="(max-width: 265px) 100vw, 265px" /></noscript></td>
+<td>It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses, and pipelining where the client can request several resources from the server at once. However, pipelining was hard to implement due to issues such as head-of-line blocking and was not a feasible solution.<br>
+<img alt="HTTP2 Protocol" width="265" height="300" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http2-265x300.png 265w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http2.png 376w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http2-265x300.png" data-sizes="(max-width: 265px) 100vw, 265px" class="alignright size-medium wp-image-417 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="alignright size-medium wp-image-417" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http2-265x300.png" alt="HTTP2 Protocol" width="265" height="300" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http2-265x300.png 265w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http2.png 376w" sizes="(max-width: 265px) 100vw, 265px" /></noscript></td>
+<td>Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost at the same time. It is done using streams which can be prioritized, can have dependencies and individual flow control. It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.<br>
+<img alt="HTTP3 Protocol" width="283" height="300" data-srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http3-283x300.png 283w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http3.png 351w" data-src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http3-283x300.png" data-sizes="(max-width: 283px) 100vw, 283px" class="alignright size-medium wp-image-418 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="alignright size-medium wp-image-418" src="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http3-283x300.png" alt="HTTP3 Protocol" width="283" height="300" srcset="https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http3-283x300.png 283w, https://cheapsslsecurity.com/p/wp-content/uploads/2019/07/http3.png 351w" sizes="(max-width: 283px) 100vw, 283px" /></noscript></td>
+</tr>
+<tr>
+<td>Status Code</td>
+<td>Can define 16 status codes; the error prompt is not specific enough.</td>
+<td>Introduces a warning header field to carry additional information about the status of a message. Can define 24 status codes, error reporting is quicker and more efficient.</td>
+<td>Underlying semantics of HTTP such as headers, status codes remains the same.</td>
+</tr>
+<tr>
+<td>Authentication Mechanism</td>
+<td>Uses basic authentication scheme which is unsafe since username and passwords are transmitted in clear text or base64 encoded.</td>
+<td>It is relatively secure since it uses digest authentication, NTLM authentication.</td>
+<td>Security concerns from previous versions will continue to be seen in HTTP/2. However, it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.</td>
+</tr>
+<tr>
+<td>Caching</td>
+<td>Provides support for caching via the If-Modified-Since header.</td>
+<td>Expands on the caching support by using additional headers like cache-control, conditional headers like If-Match and by using entity tags.</td>
+<td>HTTP/2 does not change much in terms of caching. With the server push feature if the client finds the resources are already present in the cache, it can cancel the pushed stream.</td>
+</tr>
+<tr>
+<td>Web Traffic</td>
+<td colspan="2">HTTP/1.1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0. However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously by using multiple domains), connection reuse and pipelining, there is an increased risk of network congestion.</td>
+<td>HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time by a greater margin along with being less sensitive to network delays.</td>
+</tr>
+</tbody>
+</table>
+<p>Header CompressionHeaders are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire.Header compression is included by default in HTTP/2 using HPACK.Performance Optimization Provides support for caching to deliver pages faster. Spriting, concatenating, inlining, domain sharding are some of the optimizations used as a workaround to the ‘six connections per host’ rule.Removes the need for unnecessary optimization hacks. Protocol Type Text based protocol that is in the readable form.It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). Needs to be converted back from binary in order to read it. SecuritySSL is not required but recommended. Digest authentication used in HTTP1.1 is an improvement over HTTP1.0. HTTPS uses SSL/TLS for secure encrypted communication.Though security is still not mandatory, it is mostly encrypted (though it is not enforced) since almost all clients require traffic to be encrypted. It also has some minimum standards, such as minimum key size for encryption. TLS 1.2 etc.</p>
+<h2>How to Implement HTTP/2 on Your Website</h2>
+<p>Since using HTTP/2 is an invisible process when correctly implemented, your website may already be using it without your realization. There is an easy way to check this:</p>
+<ul>
+<li>Open the web developer tool on the web browser (like Firefox).</li>
+<li>Under the network tab, select any of the resources and check the version number under the headers tab.</li>
+</ul>
+<p>While HTTP/2 does not mandate the use of SSL, it is crucial to install an SSL certificate because the leading browsers, including Firefox and Chrome, have decided to implement HTTP/2 only over TLS (HTTPS). In order to enable HTTP/2 it is essential to get an SSL/TLS certificate and make every page on the website https.</p>
+<p>At the web server level, it could be as simple as a software update, for example, Apache began support for HTTP/2 in version 2.4.17.</p>
+<h2>Adoption Of HTTP/2</h2>
+<p>HTTP/2 penetration on the client side is more than 70% as most major browsers support HTTP/2 and on the server side we have major tech giants like Google, Facebook, Nginx, etc. who have their own servers supporting HTTP/2. The adoption rate, <a href="https://w3techs.com/technologies/details/ce-http2" target="_blank" rel="noopener noreferrer">according to W3Techs</a>, is currently around 29% globally.</p>
+<div class="yarpp yarpp-related yarpp-related-website yarpp-template-list">
+
+<h3>Related posts:</h3><ol>
+<li><a href="https://cheapsslsecurity.com/p/comodo-vs-thawte-ssl-certificate-provider/" rel="bookmark" title="Comodo Vs. Thawte: Which SSL Certificate Provider Should You Choose?">Comodo Vs. Thawte: Which SSL Certificate Provider Should You Choose? </a></li>
+<li><a href="https://cheapsslsecurity.com/p/what-the-comodo-secure-seal-is-and-how-to-get-it/" rel="bookmark" title="What the Comodo Secure Seal is and How to Get It">What the Comodo Secure Seal is and How to Get It </a></li>
+<li><a href="https://cheapsslsecurity.com/p/what-is-the-sectigo-trust-seal-how-do-i-get-it/" rel="bookmark" title="What is the Sectigo Trust Seal? How Do I Get It?">What is the Sectigo Trust Seal? How Do I Get It? </a></li>
+<li><a href="https://cheapsslsecurity.com/p/ov-vs-ev-ssl-which-type-of-certificate-should-you-choose/" rel="bookmark" title="OV SSL vs EV SSL — Which Type of Certificate Should You Choose?">OV SSL vs EV SSL — Which Type of Certificate Should You Choose? </a></li>
+<li><a href="https://cheapsslsecurity.com/p/ev-ssl-vs-ssl-standard-ssl-certificate-which-is-right-for-my-website/" rel="bookmark" title="EV SSL vs SSL (Standard SSL) Certificate — Which Is Right for My Website?">EV SSL vs SSL (Standard SSL) Certificate — Which Is Right for My Website? </a></li>
+<li><a href="https://cheapsslsecurity.com/p/one-ssl-for-multiple-domains-is-it-possible/" rel="bookmark" title="One SSL for Multiple Domains — Is It Possible?">One SSL for Multiple Domains — Is It Possible? </a></li>
+<li><a href="https://cheapsslsecurity.com/p/best-woocommerce-ssl-certificate/" rel="bookmark" title="How to Find the Best WooCommerce SSL Certificate">How to Find the Best WooCommerce SSL Certificate </a></li>
+<li><a href="https://cheapsslsecurity.com/p/ssl-certificate-price/" rel="bookmark" title="SSL Certificate Price: How Much Does Website Security Cost You?">SSL Certificate Price: How Much Does Website Security Cost You? </a></li>
+</ol>
+</div>
+</div>
+<footer class="entry-meta">
+This entry was posted in <a href="https://cheapsslsecurity.com/p/ssl-basics/" rel="category tag">SSL Basics</a> and tagged <a href="https://cheapsslsecurity.com/p/tag/https2/" rel="tag">https2</a> by <a href="https://cheapsslsecurity.com/p/author/casey-crane/">casey.crane</a>. Bookmark the <a href="https://cheapsslsecurity.com/p/http2-vs-http1/" title="Permalink to HTTP/1.x vs. HTTP/2 – The Difference Between the Two Protocols Explained" rel="bookmark">permalink</a>.
+</footer>
+</article>
+<div id="comments">
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="footertop">
+<div class="wrapper">
+<div class="reviewrap">
+<div class="review-head">
+<h3>Site Reviews</h3>
+<a href="https://cheapsslsecurity.com/support/ssl-reviews.html">View All SSL Reviews</a>
+<div class="clear"></div>
+</div>
+<div class="reviewbox">
+<div class="reviewrow">
+<div class="revnamedate">
+<p>Janusz Czeropski<span>Apr 2022	</span></p>
+</div>
+<div class="revrating"><img alt="Rating" width="103" height="16" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-star-rating.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Rating" width="103" height="16" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-star-rating.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-star-rating.svg" alt="Rating" width="103" height="16"/></noscript></div>
+<div class="clear"></div>
+</div>
+<p>"Cheapsslsecurity is really flexible product for company starters including long term companies. Cheapsslsecurity offers affordable SSL Certificates. Which are really great product. Myself, I use Wildcard SSL by Comodo over a year with zero issues which is really surprise for so cheap Wildcard SSL. I would recommend this product to anyone."</p>
+</div>
+<div class="reviewbox">
+<div class="reviewrow">
+<div class="revnamedate">
+<p>Raed Neshiewat<span>Apr 2022</span></p>
+</div>
+<div class="revrating"><img alt="Rating" width="103" height="16" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-star-rating.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  alt="Rating" width="103" height="16" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-star-rating.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-star-rating.svg" alt="Rating" width="103" height="16"/></noscript></div>
+<div class="clear"></div>
+</div>
+<p>"Very fast delivery. Installation was easy with no problems. If you are installing a wildcard SSL certificate on cPanel, you need to specify the actual domain name, don't try to install it on *.domain.com , you have to install it on each subdomain such as admin.domain.com, shop.domain.com,..etc. Use the same certificate for each subdomain you install. Good luck!"</p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="connectaccept">
+<div class="connectbox connect">
+<p> Connect with us:</p>
+<div class="social">
+<ul class="social">
+<li class="facebook"><a target="_blank" href="https://www.facebook.com/CheapSSLSecurities"><img alt="Facebook" height="29" width="25" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/social-facebook.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="Facebook" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/social-facebook.svg" height="29" width="25" ></noscript></a></li>
+<li class="twitter"><a target="_blank" href="https://twitter.com/sslsecurity"><img alt="Twitter" height="29" width="25" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/social-twitter.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="Twitter" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/social-twitter.svg" height="29" width="25"></noscript></a></li>
+</ul>
+</div>
+</div>
+<div class="connectbox browsera">
+<p>99.9% Browser Support:</p>
+<span class="browseraimg"><img alt="Browsers" height="29" width="179" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-browsericons.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="Browsers" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/img-browsericons.svg" height="29" width="179" ></noscript></span> </div>
+<div class="connectbox accept">
+<p> We Accept:</p>
+<span class="acceptimg"><img alt="Payment" height="29" width="224" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/payment-img.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="Payment" src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/payment-img.svg" height="29" width="224"></noscript></span> </div>
+<div class="clear"> </div>
+</div>
+<div class="productbar">
+<div class="homeproductbox">
+<div class="probrandimg">
+<a href="https://cheapsslsecurity.com/sslbrands/symantec.html">
+<img alt="RapidSSL" width="154" height="40" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-rapidssl.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-rapidssl.svg" alt="RapidSSL" width="154" height="40"></noscript>
+</a>
+</div>
+<p class="text">Get affordable, fast SSL security solutions for your website.</p>
+<div class="propriceraw">
+<div class="propricebrand"> <span>from</span> $4.97/yr</div>
+<a href="https://cheapsslsecurity.com/sslbrands/rapidssl.html" class="gbtn probtn">View All Certificates</a>
+</div>
+</div>
+<div class="homeproductbox">
+<div class="probrandimg">
+<a href="https://cheapsslsecurity.com/sslbrands/comodo.html">
+<img alt="Comodo" width="154" height="40" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-comodo.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-comodo.svg" alt="Comodo" width="154" height="40"></noscript>
+</a>
+</div>
+<p class="text">Get the cheapest prices on a flexible SSL solution from a world leader.</p>
+<div class="propriceraw">
+<div class="propricebrand"> <span>from</span> $5.45/yr</div>
+<a href="https://cheapsslsecurity.com/sslbrands/comodo.html" class="gbtn probtn">View All Certificates</a>
+</div>
+</div>
+<div class="homeproductbox">
+<div class="probrandimg">
+<a href="https://cheapsslsecurity.com/sslbrands/geotrust.html">
+<img alt="GeoTrust" width="154" height="40" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-geotrust.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-geotrust.svg" alt="GeoTrust" width="154" height="40"></noscript>
+</a>
+</div>
+<p class="text"> Get SSL security solutions from a leading &amp; trusted worldwide brand.</p>
+<div class="propriceraw">
+<div class="propricebrand"> <span>from</span> $36.52/yr</div>
+<a href="https://cheapsslsecurity.com/sslbrands/geotrust.html" class="gbtn probtn">View All Certificates</a>
+</div>
+</div>
+<div class="homeproductbox">
+<div class="probrandimg">
+<a href="https://cheapsslsecurity.com/sslbrands/thawte.html">
+<img alt="Thawte" width="154" height="40" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-thawte.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/pro-thawte.svg" alt="Thawte" width="154" height="40"></noscript></a>
+</div>
+<p class="text"> SSL &amp; code signing solutions at the lowest &amp; best price.</p>
+<div class="propriceraw">
+<div class="propricebrand"> <span>from</span> $28.44/yr</div>
+<a href="https://cheapsslsecurity.com/sslbrands/thawte.html" class="gbtn probtn">View All Certificates</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bottombar">
+<div class="wrapper bottombarwrap">
+<div class="footbox sbox-one">
+<div class="first">
+<div class="trustedsite-trustmark" data-type="106" data-width="128" data-height="53"><img alt="TrustedSite Verified Site Seal" width="130" height="54" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/trustedsite-verified-ssl.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/trustedsite-verified-ssl.svg" alt="TrustedSite Verified Site Seal" width="130" height="54" /></noscript></div>
+</div>
+<div class="rightshopper">
+<a href="https://cheapsslsecurity.com/support/ssl-reviews.html" class="shopperlink"><img style="border: 0" height="100" width="108" alt="Customer Reviews" oncontextmenu="var d = new Date(); alert(&#39;Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \251 &#39;+d.getFullYear()+&#39;.&#39;); return false;" data-src="//www.shopperapproved.com/newseals/12031/206272-stats.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="//www.shopperapproved.com/newseals/12031/206272-stats.gif" style="border: 0" height="100" width="108" alt="Customer Reviews" oncontextmenu="var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Shopper Approved \251 '+d.getFullYear()+'.'); return false;" /></noscript></a><script type="text/javascript">(function() {js.src = '//www.shopperapproved.com/seals/certificate.js'; js.type = "text/javascript"; document.getElementsByTagName("head")[0].appendChild(js); })();</script>
+</div>
+</div>
+<div class="footbox sbox-two">
+<h4>SSL Brands</h4>
+<ul>
+<li><a href="https://cheapsslsecurity.com/sslbrands/rapidssl.html">RapidSSL</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/comodo.html">Comodo</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/sectigo.html">Sectigo</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/geotrust.html">GeoTrust</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/thawte.html">Thawte</a></li>
+<li><a href="https://cheapsslsecurity.com/sslbrands/digicert.html">DigiCert</a></li>
+</ul>
+</div>
+<div class="footbox sbox-three">
+<h4>SSL Products</h4>
+<ul>
+<li><a href="https://cheapsslsecurity.com/sslproducts/extendedvalidation.html">Extended Validation</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/cheap-wildcard-ssl-certificates.html">Wildcard Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/organizationvalidatedssl.html">Organization Validation</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/multi-domain-ssl-certificates.html">Multi-Domain SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/san-ssl-certificates.html">SAN SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/ucc-ssl-certificates.html">UCC SSL Certificates</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/domainvalidatedssl.html">Domain Validation</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/codesigningcertificate.html">Code Signing</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/renewssl.html">Renew SSL</a></li>
+<li><a href="https://cheapsslsecurity.com/sslproducts/wordpress-ssl-certificates.html">WordPress SSL</a></li>
+</ul>
+</div>
+<div class="footbox sbox-four">
+<h4>Support<br>
+</h4>
+<ul>
+<li><a href="https://cheapsslsecurity.com/p" target="_blank">SSL Resource</a></li>
+<li><a href="https://knowledge.cheapsslsecurity.com/support/home" target="_blank" rel="noindex, nofollow">Knowledge Base</a></li>
+<li><a href="https://cheapsslsecurity.com/sitemap.html">Sitemap</a></li>
+<li><a href="https://cheapsslsecurity.com/ssltools/">SSL Tools</a></li>
+<li><a href="https://cheapsslsecurity.com/sslcompare/compare-ssl-certificates-prices.html">SSL Comparison</a></li>
+<li><a href="https://www.facebook.com/CheapSSLSecurities" target="_blank">Facebook<span><img width="" height="" alt="Facebook" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-facebook.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-facebook.svg" width="" height="" alt="Facebook"></noscript></span></a></li>
+<li><a href="https://twitter.com/sslsecurity" target="_blank">Twitter<span><img width="" height="" alt="Twitter" data-src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-twitter.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://cheapsslsecurity.com/p/wp-content/themes/cheapssl-psite/images/icon-twitter.svg" width="" height="" alt="Twitter"></noscript></span></a></li>
+</ul>
+</div>
+<div class="footbox sbox-five">
+<h4>Contact Us</h4>
+<ul>
+<li><a href="https://cheapsslsecurity.com/support/contactus.html">Contact Us</a></li>
+<li><a href="https://cheapsslsecurity.com/low-price-guarantee.html">Low Price Guarantee</a></li>
+<li><a href="https://cheapsslsecurity.com/client/eligiblecancellationorderlist.html">Refund Request</a></li>
+<li><a href="https://cheapsslsecurity.com/support/whysocheap.html">Why So Cheap?</a></li>
+<li><a href="https://cheapsslsecurity.com/support/sslfaq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="clear"> </div>
+</div>
+</div>
+<footer id="colophon" role="contentinfo" class="footer">
+<div class="wrapper footerbar">
+<p class="fleft">All Rights Reserved by CheapSSLSecurity © 2022</p>
+<ul class="fright">
+<li><a href="https://cheapsslsecurity.com/support/refundpolicy.html"><span>Refund Policy</span></a></li>
+<li><a href="https://cheapsslsecurity.com/support/privacypolicy.html"><span>Privacy Policy</span></a></li>
+<li><a href="https://cheapsslsecurity.com/support/disclaimer.html"><span>Disclaimer</span></a></li>
+</ul>
+<div class="clear"> </div>
+</div>
+</footer>
+
+</div>
+
+<link data-minify="1" rel="stylesheet" href="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/related.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" type="text/css" media="all">
+<script type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/comment-reply.min.js.download" id="comment-reply-js" defer=""></script>
+<script type="text/javascript" id="wp-postratings-js-extra">
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"https:\/\/cheapsslsecurity.com\/p\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/cheapsslsecurity.com\/p\/wp-admin\/admin-ajax.php","text_wait":"Please rate only 1 item at a time.","image":"stars","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src="https://cheapsslsecurity.com/p/wp-content/plugins/wp-postratings/images/stars/rating_over.gif";;
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/postratings-js.js.download" id="wp-postratings-js" defer=""></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/p(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/cheapsslsecurity.com\/p","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="text/javascript" src="./HTTP2 Vs HTTP1 – The Difference Between the Two Protocols Explained_files/smush-lazy-load.min.js.download" id="smush-lazy-load-js" defer=""></script>
+<script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link data-minify="1" rel="stylesheet" type="text/css" media="all" href="https://cheapsslsecurity.com/p/wp-content/cache/min/1/p/wp-content/themes/cheapssl-psite/style.css?ver=1650955618" /><link data-minify="1" rel="stylesheet" type="text/css" media="all" href="https://cheapsslsecurity.com/p/wp-content/cache/min/1/p/wp-content/themes/cheapssl-psite/css/responsive.css?ver=1650955618"/><link rel='stylesheet' id='wp-block-library-css'  href='https://cheapsslsecurity.com/p/wp-includes/css/dist/block-library/style.min.css?ver=5.9.3' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='wp-postratings-css'  href='https://cheapsslsecurity.com/p/wp-content/cache/min/1/p/wp-content/plugins/wp-postratings/css/postratings-css.css?ver=1650955618' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='yarppRelatedCss-css'  href='https://cheapsslsecurity.com/p/wp-content/cache/min/1/p/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=1650955618' type='text/css' media='all' /></noscript>
+</body></html>
